@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>MJM STORE</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+                <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> <!-- Compatibilité des balises HTML5 pour les navigateurs Internet Explorer 8 7 et 6 -->
+
+        <!--[if (gte IE 6)&(lte IE 8)]>
+         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.js"></script>
+       <![endif]--> <!-- Compatibilité de certains selecteurs CSS3 pour les navigateurs Internet Explorer 7 et 6 -->
+
+
+        <link rel="stylesheet" href="css/reset-html5.css" /> <!-- Mise en place de valeurs par défaut pour éviter toute différence d'affichage entre les différents navigateurs -->
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        
+
+
+        <!--[if IE 8]>
+        <link href="css/style-ie8.css" rel="stylesheet" type="text/css" media="screen"/>
+<![endif]-->
+        <!--[if IE 7]>
+      <link href="css/style-ie7.css" rel="stylesheet" type="text/css" media="screen"/>
+<![endif]--> <!-- Feuilles de style personnalisé corrigeant les différences de mise en page pour les navigateurs Internet Explorer 8 et 7 -->
+
+        
+        <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery.cycle2.min.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        
+        
+        <header class="container_12 header_main">
+
+        	<div class="header_bar">
+
+        		<!-- Block User Info -->
+        		<ul class="blockuserinfo">
+        			<li><a href="#" class="menu_user"></a></li>
+        			<li><a href="#" class="menu_cart"></a></li>
+        		</ul>
+        		<!-- / Block User Info -->
+
+        		<!-- Block Favoris -->
+        		<ul class="blockfav">
+        			<li><a href="#" class="menu_heart"></a></li>
+        		</ul>
+        		<!-- / Block Favoris -->
+
+        		<!-- Block Search -->
+        		<div id="search_block_top">
+					<form method="get" action="" id="searchbox">
+						<p>
+							<input type="submit" name="submit_search" value="" class="button" />
+							<input type="hidden" name="controller" value="search" />
+							<input type="hidden" name="orderby" value="position" />
+							<input type="hidden" name="orderway" value="desc" />
+							<input class="search_query" type="text" id="search_query_top" name="search_query" value="" placeholder="RECHERCHE" />
+						</p>
+					</form>
+				</div>
+				<!-- / Block Search -->
+
+        	</div><!-- /.header_bar -->
+
+        	<div class="clear"></div>
+
+        	<div class="header_logo">
+        		<a href="#"><img src="img/logo.png" alt=""></a>
+        	</div>
+
+
+        	<!-- Block Top Menu -->
+        	<nav id="nav_principal">
+        		<div class="menu_backline"></div>
+        		<ul class="sf-menu">
+        			<li><a href="#">Shop</a></li>
+        			<li><a href="#">Qui-sommes-nous ?</a></li>
+        			<li><a href="#">Contributeurs</a></li>
+        			<li><a href="#">FAQ</a></li>
+        			<li><a href="#">Contact</a></li>
+        			<li><a href="#">Blog</a></li>
+        		</ul>
+        	
+        	</nav>
+        	<!-- / Block Top Menu -->
+
+        </header>
+        
+
+        <section class="container_12">
+
+
+        	<!-- Block Home Slider -->
+			<section class="homeslider">
+
+				<article class="homeslider_slide">
+					<img src="img/slide.png" alt="">
+					<div class="homeslider_content">
+						<h1>Robe rouge et verte</h1>
+						<div class="homeslider_text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed semper tincidunt augue e porttitor.
+							</p>
+						</div>
+                        <a href="#" class="seeproduct">Voir le produit</a>
+					</div>
+				</article>
+
+				<article class="homeslider_slide">
+					<img src="img/slide2.png" alt="">
+					<div class="homeslider_content">
+						<h1>Robe Bleue</h1>
+						<div class="homeslider_text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed semper tincidunt augue e porttitor.
+							</p>
+                            <a href="#" class="seeproduct">Voir le produit</a>
+						</div>
+					</div>
+				</article>
+				
+				 <!-- <div class="cycle-pager"></div> -->
+                 <div class="controls">
+                    <a href="#" id="prev"><img src="img/prev.png"></a>
+                    <a href="#" id="next"><img src="img/next.png"></a>
+                 </div>
+
+				<div class="clear"></div>
+        	</section>
+
+
+        	<!-- / Block Home Slider -->
+        	
+
+        	<!-- Block Infinit Wall -->
+        	<section id="infinit_wall">
+
+        		
+        			<!-- LIGNE 1 et 2 -->
+        			<article class="iw_2x2">
+        				<img src="img/best-seller.png" alt="">
+        				<p>Best-Seller</p>
+        			</article>
+
+        			<div class="iw_4"> 
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				
+        			</div>
+
+        			<div class="iw_4">
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        			</div>
+        			
+        			<!-- LIGNE 3 -->
+        		<article class="iw_2x1 iw_free_shipping">
+        			<a href="#">
+        				Free<br>Shipping<br>
+        				<span>Plus que 6 jours</span>
+        			</a>
+        			
+        		</article>
+
+        		<div class="iw_4">
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+        		</div>
+
+
+        		<!-- LIGNE 4 -->
+        		<div class="iw_6">
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+        				
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+        		</div>
+
+        		<!-- LIGNE 5 -->
+        		<article class="iw_2x1 iw_newsletter">
+        			<div>
+        			
+				<div id="newsletter_block_main" class="block">
+					<p class="title_block">Newsletter</p>
+					<div class="block_content">
+						<p>Message de validation ou d'erreur.</p>
+					
+						<form action="" method="post">
+							<p>
+								<input class="inputNew" id="newsletter-input" type="text" name="email" size="18" value="Votre adresse mail" />
+								<input type="submit" value="" class="button_mini" name="submitNewsletter" />
+								<input type="hidden" name="action" value="0" />
+							</p>
+						</form>
+					</div>
+				</div>
+				<!-- /Block Newsletter module-->
+        			</div>
+        		</article>
+
+        		<div class="iw_4">
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+        				
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+        		</div>
+
+                <div id="loading"><img src="img/loader.gif"><p>Loading More</p></div>
+
+        		<!-- AUTRE LIGNES -->
+        		<div class="iw_6" id="wall">
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+        				
+        				<article class="iw_product">
+        					<img src="img/product.png" alt="">
+        					<div class="iw_product_hover">
+        						<p class="iw_product_prix">20€</p>
+        						<ul class="iw_product_menu">
+        							<li><a href="#" class="heart"></a></li>
+        							<li><a href="#" class="info"></a></li>
+        						</ul>
+        					</div>
+        				</article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="iw_product">
+                            <img src="img/product.png" alt="">
+                            <div class="iw_product_hover">
+                                <p class="iw_product_prix">20€</p>
+                                <ul class="iw_product_menu">
+                                    <li><a href="#" class="heart"></a></li>
+                                    <li><a href="#" class="info"></a></li>
+                                </ul>
+                            </div>
+                        </article>
+        		</div>
+
+        	</section>
+        	<!-- /Block Infinit Wall -->
+
+        	<div class="clear"></div>
+        </section>
+
+
+        <footer class="footer_main">
+        	<div class="footer_main_top_bck">
+	        	<section class="footer_main_top container_12">
+
+	        		<img class="logo_footer" src="img/logo_footer.png" alt="">
+
+	        		<section class="footer_main_left">
+
+		        		<!-- Block categories module -->
+						<div class="blockcategories_footer">
+							<p class="title_block">Catégories</p>
+									<ul class="tree dhtml">
+										<li><a href="#" title="">Photographie</a></li>
+										<li><a href="#" title="">Objet design / Déco</a></li>
+										<li><a href="#" title="">Graphisme</a></li>
+										<li><a href="#" title="">Prestations</a></li>
+										<li><a href="#" title="">Médias</a></li>
+										<li><a href="#" title="">Design Produit</a></li>
+										<li><a href="#" title="">Vêtements / Accessoires</a></li>
+									</ul>
+							<br class="clear"/>
+						</div>
+						<!-- /Block categories module -->
+
+
+						<!-- Block categories module -->
+						<div class="blockcategories_footer">
+							<p class="title_block">Best Seller</p>
+									<ul class="tree dhtml">
+										<li><a href="#" title="">Lampe design</a></li>
+										<li><a href="#" title="">T-Shirt graphique</a></li>
+										<li><a href="#" title="">Coque iPhone</a></li>
+										<li><a href="#" title="">Poster montagne</a></li>
+										<li><a href="#" title="">Photo lapin</a></li>
+										<li><a href="#" title="">Chaise vintage</a></li>
+										<li><a href="#" title="">Modélisation Requin 3D</a></li>
+									</ul>
+							<br class="clear"/>
+						</div>
+						<!-- /Block categories module -->
+
+
+						<!-- Block categories module -->
+						<div class="blockcategories_footer">
+							<p class="title_block">Top Créateurs</p>
+									<ul class="tree dhtml">
+										<li><a href="#" title="">Jean-Christophe</a></li>
+										<li><a href="#" title="">Jean-Jacques</a></li>
+										<li><a href="#" title="">Jean-Paul</a></li>
+										<li><a href="#" title="">Jean-Eude</a></li>
+										<li><a href="#" title="">Jean-Albert</a></li>
+										<li><a href="#" title="">Jean-Bon</a></li>
+										<li><a href="#" title="">Jean-Philippe</a></li>
+									</ul>
+							<br class="clear"/>
+						</div>
+						<!-- /Block categories module -->
+
+
+						<!-- Block categories module -->
+						<div class="blockcategories_footer">
+							<p class="title_block">Mon compte</p>
+									<ul class="tree dhtml">
+										<li><a href="#" title="">Ma liste d’envies</a></li>
+										<li><a href="#" title="">Mes commandes</a></li>
+										<li><a href="#" title="">Mes avoirs</a></li>
+										<li><a href="#" title="">Mes adresses</a></li>
+										<li><a href="#" title="">Ma informations</a></li>
+									</ul>
+							<br class="clear"/>
+						</div>
+						<!-- /Block categories module -->
+
+					<div class="clear"></div>
+					</section> <!-- /.footer_main_left -->
+
+				
+
+					<section class="footer_main_right">
+						<!-- Block Search -->
+
+		        		<div id="search_block_footer">
+		        			<p class="title_block">Recherche</p>
+
+							<form method="get" action="" id="searchbox">
+								<p>
+									<input type="submit" name="submit_search" value="" class="button" />
+									<input type="hidden" name="controller" value="search" />
+									<input type="hidden" name="orderby" value="position" />
+									<input type="hidden" name="orderway" value="desc" />
+									<input class="search_query" type="text" id="search_query_top" name="search_query" value="" placeholder="Recherche" />
+								</p>
+							</form>
+						</div>
+						<!-- / Block Search -->
+
+						<!-- Block Newsletter module-->
+						<div id="newsletter_block_bottom" class="block">
+							<p class="title_block">Newsletter</p>
+							<div class="block_content">
+							
+								<p></p>
+							
+								<form action="" method="post" id="newsletterbox">
+									<p>
+										<input class="inputNew" id="newsletter-input" type="text" name="email" size="18" value="" placeholder="Votre email" />
+										<input type="submit" value="" class="button_mini" name="submitNewsletter" />
+										<input type="hidden" name="action" value="0" />
+									</p>
+								</form>
+							</div>
+						</div>
+						<!-- /Block Newsletter module-->
+
+						
+						<div>
+							<p class="title_block"><a href="#">Accédez au blog</a></p>
+						</div>
+
+
+						<div id="footer_social">
+							<p class="title_block">Suivez-nous</p>
+							<ul>
+								<li><a href="#" class="footer_facebook"></a></li>
+								<li><a href="#" class="footer_twitter"></a></li>
+								<li><a href="#" class="footer_pinterest"></a></li>
+								<li><a href="#" class="footer_instangram"></a></li>
+							</ul>
+						</div>
+
+						<div class="clear"></div>
+					</section> <!-- /.footer_main_right -->
+
+				<div class="clear"></div>
+	        	</section>
+			</div>
+
+			<div class="footer_main_bottom_bck">
+        	<section class="footer_main_bottom container_12">
+
+        		<section class="footer_main_bottom_left">
+
+        		<!-- Block categories module -->
+						<div class="blockcategories_footer">
+							<p class="title_block"></p>
+									<ul class="tree dhtml">
+										<li><a href="#" title="">MJM Graphic Design</a></li>
+										<li><a href="#" title="">Livraisons / Retour</a></li>
+										<li><a href="#" title="">CGV</a></li>
+										<li><a href="#" title="">Mentions légales</a></li>
+									</ul>
+							<br class="clear"/>
+						</div>
+				<!-- /Block categories module -->
+					<div class="clear"></div>
+				</section>
+
+
+				<section class="footer_main_bottom_right">
+
+					<div id="footer_paiement">
+						<p class="title_block">Paiement sécurisé</p>
+						<ul>
+								<li><a href="#" class="footer_visa"></a></li>
+								<li><a href="#" class="footer_mastercard"></a></li>
+								<li><a href="#" class="footer_americanexpress"></a></li>
+								<li><a href="#" class="footer_paypal"></a></li>
+							</ul>
+					</div>
+
+				</section>
+
+				<div class="clear"></div>
+        	</section>
+
+        </div> <!-- /.footer_main_bottom_bck -->
+        </footer>
+
+        <div class="copyright">© Copyright MJM Web02</div>
+        
+        
+
+    </body>
+</html>
