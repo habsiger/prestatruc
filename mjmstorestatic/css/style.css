@@ -358,10 +358,8 @@ body{
 
 /* Vignette 2x2 */
 #infinit_wall .iw_2x2{
-	width : 306px;
 	height: 306px;
 	position: relative;
-	float:left;
 	margin-right: 30px;
 	margin-bottom: 30px;
 }
@@ -383,7 +381,6 @@ body{
 /* Conteneur 4 colonnes */
 .iw_4{
 	float:left;
-	width : 642px;
 	height : 138px;
 	margin-bottom: 30px;
 }
@@ -571,7 +568,7 @@ body{
 
 
 
-#wall{
+#wall article{
 	display:none;
 }
 
