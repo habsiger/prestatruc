@@ -6,6 +6,7 @@ $('.homeslider').cycle({
 	prev : "#prev"
 });
 
+/*
 var windowHeight, windowscrollTop, footerOffset, i, j, step;
 
 i = 6;
@@ -29,7 +30,7 @@ $(window).bind('scroll',function(f){
 	}
 
 });
-
+*/
 
 
    
